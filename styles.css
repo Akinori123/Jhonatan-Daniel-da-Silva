@@ -1,0 +1,119 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gradiente de fundo aplicado ao site inteiro */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0a0a2a, #000);
+    background-attachment: fixed; /* Mantém o gradiente fixo sem repetições */
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Logo */
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Torna a imagem circular */
+    margin-right: 20px; /* Espaço entre a logo e o menu */
+}
+
+/* Estilização das seções */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Melhorias na seção "Sobre Mim" */
+#sobre {
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+/* Estilizando a Formação */
+#formacao .curso {
+    font-size: 18px; /* Aumento do tamanho da fonte */
+    margin: 12px 0;
+}
+
+/* Rodapé fixo */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+/* Melhorias na seção "Contato" */
+#contato h1 {
+    text-align: center;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhamento à esquerda */
+    font-size: 18px; /* Aumento do tamanho do texto */
+    margin-bottom: 15px;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    font-size: 16px; /* Aumento do tamanho da área de preenchimento */
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Informação de e-mail mantida */
+#contato p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Centralização do título "Portfólio" */
+#portfolio h1 {
+    text-align: center;
+}
