@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Configura a codificação de caracteres para suportar acentuação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a responsividade para dispositivos móveis -->
+    <title>Meu Site</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo de estilos CSS -->
+    <script defer src="script.js"></script> <!-- Importa o script JavaScript, garantindo carregamento após o HTML -->
+</head>
+<body>
+
+    <!-- Barra de navegação -->
+    <nav>
+        <img src="imagens/logo.png" alt="Logo Currículo" class="logo"> <!-- Logo do site -->
+        <ul>
+            <li><a href="#" onclick="mostrarSecao('sobre')">Sobre Mim</a></li> <!-- Link para a seção "Sobre Mim" -->
+            <li><a href="#" onclick="mostrarSecao('formacao')">Formação</a></li> <!-- Link para a seção "Formação" -->
+            <li><a href="#" onclick="mostrarSecao('portfolio')">Portfólio</a></li> <!-- Alterado de "Trabalhos Feitos" para "Portfólio" -->
+            <li><a href="#" onclick="mostrarSecao('contato')">Contato</a></li> <!-- Link para a seção "Contato" -->
+        </ul>
+    </nav>
+
+    <!-- Seção sobre mim -->
+    <section id="sobre" class="secao">
+        <h1>Sobre Mim</h1> <!-- Título da seção -->
+        
+        <!-- Primeiro parágrafo: apresentação e início na tecnologia -->
+        <p>Meu nome é Jhonatan, tenho 21 anos, e tecnologia sempre fez parte da minha vida. 
+        Desde criança, os computadores despertavam minha curiosidade, mas foi aos 7 anos que comecei a explorar os jogos e me encantei com tudo o que era possível fazer no mundo digital. 
+        Eu queria entender como aquilo funcionava e, sem perceber, iniciei minha jornada na programação.</p>
+        <br> <!-- Quebra de linha para separar os parágrafos -->
+        
+        <!-- Segundo parágrafo: hobbies e interesses -->
+        <p>Além da tecnologia, tenho hobbies que me acompanham no dia a dia: jogar, assistir séries e filmes, e principalmente ler livros em inglês. 
+        Além de ser um passatempo, a leitura me ajuda a aprender mais e a desenvolver novas habilidades.</p>
+        <br> <!-- Quebra de linha para espaçamento -->
+
+        <!-- Terceiro parágrafo: aprendizado sobre criação de sites -->
+        <p>Com o tempo, senti vontade de criar meus próprios projetos e comecei a desenvolver sites para e-commerce, 
+        usando plataformas como WordPress e Wix. Essas ferramentas facilitaram muito o processo, mas percebi que, 
+        para ter total liberdade criativa, eu precisava entender mais a fundo o desenvolvimento web. 
+        Foi aí que decidi me dedicar ao aprendizado, buscando sempre evoluir e aperfeiçoar minhas habilidades.</p>
+    </section>
+
+    <!-- Seção de formação educacional -->
+    <section id="formacao" class="secao">
+        <h1>Formação Educacional</h1> <!-- Título da seção -->
+        
+        <!-- Informações sobre escolaridade -->
+        <p>Graduação: Ciência da Computação (Cursando)</p>
+        <p>Ensino Médio: Concluído</p> 
+
+        <!-- Lista de cursos e certificações -->
+        <h2>Cursos e Certificações:</h2>
+        <div class="curso">✅ Desenvolvimento Python – Fundamentos e Aplicações</div>
+        <div class="curso">✅ Java Completo – Programação e Orientação a Objetos</div>
+        <div class="curso">✅ Marketing Digital – Estratégias e Comunicação</div>
+        <div class="curso">✅ Inglês Avançado – Certificação Internacional</div>
+        <div class="curso">✅ Excel Avançado – Certificação Internacional</div>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio" class="secao">  
+        <h1>Portfólio</h1> <!-- Título da seção -->
+        <p>Aqui estão alguns dos projetos que realizei como afiliado, promovendo produtos e buscando estratégias de vendas online:</p>  
+
+        <!-- Projeto 1 -->
+        <div class="trabalho">  
+            <h2>Hidraliso - Site de Afiliado</h2>  
+            <p>Este projeto envolveu a divulgação do Hidraliso, um produto cosmético voltado para alisamento capilar. 
+            Utilizei estratégias digitais, como tráfego pago e marketing de influência, para aumentar a visibilidade e impulsionar as vendas.</p>  
+            <a href="https://simplesdecomprar.com/hidraliso" target="_blank">Visitar Site</a>  
+        </div>  
+
+        <!-- Projeto 2 -->
+        <div class="trabalho">  
+            <h2>Sinais Milionários</h2>  
+            <p>Campanha focada na venda de sinais de investimento financeiro. 
+            O objetivo foi atrair um público interessado em operar no mercado financeiro, utilizando anúncios segmentados e técnicas de copywriting persuasivas.</p>  
+            <a href="https://sinaismilionarios.com.br/sinais-milionarios" target="_blank">Visitar Site</a>  
+        </div>  
+
+        <!-- Projeto 3 -->
+        <div class="trabalho">  
+            <h2>Do Zero A Fluência</h2>  
+            <p>Programa de aprendizado de inglês estruturado para levar o aluno da base até a fluência. 
+            Nesta campanha, foquei em divulgar os diferenciais do curso por meio de landing pages otimizadas e estratégias de marketing digital direcionadas.</p>  
+            <a href="https://professormerson.com/ingles-do-zero-ate-a-fluencia" target="_blank">Visitar Site</a>  
+        </div>  
+    </section>  
+
+    <!-- Seção de contato -->
+    <section id="contato" class="secao">
+        <h1>Contate-me para Saber Mais</h1> <!-- Título da seção -->
+        
+        <form>
+            <!-- Campo Nome -->
+            <div class="campo">
+                <label for="nome">Nome:</label> <!-- Campo para o nome --> 
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <!-- Campo Email -->
+            <div class="campo">
+                <label for="email">Email:</label> <!-- Campo para o e-mail --> 
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Campo Mensagem -->
+            <div class="campo">
+                <label for="mensagem">Mensagem:</label> <!-- Campo para mensagem --> 
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
+        </form>
+
+        <p>📧 Caso prefira, você pode me enviar um e-mail diretamente para:  
+        <strong>sjhonatan916@gmail.com</strong></p>
+    </section>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>© 2025 Todos os direitos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="mostrarSecao('sobre')">Sobre Mim</a></li>
+                <li><a href="#" onclick="mostrarSecao('formacao')">Formação</a></li>
+                <li><a href="#" onclick="mostrarSecao('portfolio')">Portfólio</a></li>
+                <li><a href="#" onclick="mostrarSecao('contato')">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
